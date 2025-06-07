@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thao Drop - Win a Free Labubu Set!</title>
+    
+    <!-- MailerLite Universal Script -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1527995');
+    </script>
+    <!-- End MailerLite Universal -->
+    
     <style>
         * {
             margin: 0;
@@ -235,41 +246,64 @@
             margin-bottom: 20px;
         }
         
-        .email-form {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 15px;
+        /* MailerLite Form Styling */
+        .ml-embedded {
+            width: 100% !important;
         }
         
-        .email-input {
-            flex: 1;
-            padding: 14px 16px;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            background: white;
-            color: #374151;
+        .ml-form-embedContainer {
+            width: 100% !important;
         }
         
-        .email-input::placeholder {
-            color: #9ca3af;
+        .ml-form-embedWrapper {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
         }
         
-        .submit-btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 14px 24px;
-            border-radius: 10px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 16px;
+        .ml-form-embedBody {
+            background: transparent !important;
+            padding: 0 !important;
         }
         
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        .ml-form-horizontal {
+            display: flex !important;
+            gap: 12px !important;
+            align-items: end !important;
+        }
+        
+        .ml-field-group {
+            flex: 1 !important;
+            margin: 0 !important;
+        }
+        
+        .ml-input {
+            width: 100% !important;
+            padding: 14px 16px !important;
+            border: none !important;
+            border-radius: 10px !important;
+            font-size: 16px !important;
+            background: white !important;
+            color: #374151 !important;
+            box-sizing: border-box !important;
+        }
+        
+        .ml-button {
+            background: linear-gradient(135deg, #667eea, #764ba2) !important;
+            color: white !important;
+            border: none !important;
+            padding: 14px 24px !important;
+            border-radius: 10px !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            transition: all 0.3s !important;
+            font-size: 16px !important;
+            white-space: nowrap !important;
+        }
+        
+        .ml-button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3) !important;
         }
         
         .steps-section {
@@ -458,16 +492,13 @@
                 <div class="progress-percentage">45% complete • Winner announced when we reach 1,000!</div>
             </div>
             
-            <!-- REPLACE THIS EMAIL SECTION WITH YOUR MAILERLITE FORM -->
             <div class="email-section">
                 <div class="email-title">🎮 Join the Giveaway</div>
                 <div class="email-subtitle">Be the first to know when our raffle platform launches</div>
-                <div class="email-form">
-                    <input type="email" class="email-input" placeholder="Enter your email">
-                    <button class="submit-btn">Join</button>
-                </div>
+                
+                <!-- MailerLite Form -->
+                <div class="ml-embedded" data-form="vvIrRi"></div>
             </div>
-            <!-- END EMAIL SECTION TO REPLACE -->
             
             <div class="steps-section">
                 <div class="steps-title">How to Enter (Complete all steps)</div>
